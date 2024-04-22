@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import styles from '../styles/styles.module.css';
 
-const pictureLink: string = "../pic/IDE.jpg";
+const pictureLink: string = '../pic/IDE.png';
 
 const IndexPage: React.FC = () => {
   // State for the list of interests
@@ -29,7 +30,7 @@ const IndexPage: React.FC = () => {
       <p>
         Welcome to my website! I&apos;m Houming Ge, and I&apos;m passionate about Computer science.
       </p>
-      <img src={pictureLink} alt="Your Image" className={styles['profile-image']} />
+      <img src="/IDE.jpg" alt="Your Image" className={styles['profile-image']} />
       <h2>Interests:</h2>
       <ul className={styles['interests-list']}>
         {/* Display the list of interests */}
@@ -38,6 +39,11 @@ const IndexPage: React.FC = () => {
         ))}
       </ul>
       <button onClick={shuffleInterests} className={styles.button}>Shuffle Interests</button>
+      <button>
+        <Link href="/things-to-read">
+          Navigate to Other Page
+        </Link>
+      </button>
     </div>
   );
 };
