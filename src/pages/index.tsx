@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from '../styles/styles.module.css';
 
+const pictureLink: string = "../pic/IDE.jpg";
+
 const IndexPage: React.FC = () => {
   // State for the list of interests
   const [interests, setInterests] = useState<string[]>([
@@ -25,9 +27,9 @@ const IndexPage: React.FC = () => {
     <div className={styles.container}>
       <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
       <p>
-        Welcome to my website! I&apos;m [Your Name], and I&apos;m passionate about [brief description of yourself].
+        Welcome to my website! I&apos;m Houming Ge, and I&apos;m passionate about Computer science.
       </p>
-      <img src="/your-image.jpg" alt="Your Image" className={styles['profile-image']} />
+      <img src={pictureLink} alt="Your Image" className={styles['profile-image']} />
       <h2>Interests:</h2>
       <ul className={styles['interests-list']}>
         {/* Display the list of interests */}
