@@ -2,11 +2,13 @@
 import React from 'react';
 import styles from '../styles/ThingsToRead.module.css'
 import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 // Define the ThingsToRead component
 const ThingsToRead: React.FC = () => {
   return (
     <div className={styles.container}>
+      <Navbar />
       {/* Apply the heading style */}
       <h1 className={styles.heading}>Things to Read</h1>
       <ul className={styles['link-list']}>

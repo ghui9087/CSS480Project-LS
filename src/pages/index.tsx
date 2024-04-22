@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { redirect } from 'next/navigation'
 
 import styles from '../styles/styles.module.css';
+import Navbar from '@/components/Navbar';
 
 const pictureLink: string = '../pic/IDE.png';
 
@@ -61,6 +62,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <Navbar />
       <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
       <p>
         Welcome to my website! I&apos;m Houming Ge, and I&apos;m passionate about Computer science.
