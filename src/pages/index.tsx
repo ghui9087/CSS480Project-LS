@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/styles.module.css';
+import { useEffect } from 'react';
 
 const pictureLink: string = '../pic/IDE.png';
+
+function searchFunction() {
+  // Your search logic here
+  console.log('Searching...');
+}
 
 const IndexPage: React.FC = () => {
   
@@ -14,6 +20,23 @@ const IndexPage: React.FC = () => {
     "Photography",
     "Cooking"
   ]);
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      // Check if Ctrl key and 'F' key are pressed simultaneously
+      if (event.ctrlKey && event.key === 'f') {
+        // Call searchFunction when Ctrl + F is pressed
+        searchFunction();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Remove event listener when component unmounts
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
 
   // Function to shuffle the list of interests
   const shuffleInterests = () => {
@@ -25,6 +48,7 @@ const IndexPage: React.FC = () => {
     setInterests(shuffledInterests);
     console.log('Searching...');
   };
+  
 
   return (
     <div className={styles.container}>
@@ -52,19 +76,19 @@ const IndexPage: React.FC = () => {
   
 };
 
-const searchFunction = () => {
-  // search logic here
-  console.log('Searching...');
-};
+// const searchFunction = () => {
+//   // search logic here
+//   console.log('Searching...');
+// };
 
 
-// Add event listener for keydown events
-document.addEventListener('keydown', (event) => {
-  // Check if Ctrl key and 'F' key are pressed simultaneously
-  if (event.altKey && event.key === 'f') {
-    // Call searchFunction when Ctrl + F is pressed
-    searchFunction();
-  }
-});
+// // Add event listener for keydown events
+// document.addEventListener('keydown', (event) => {
+//   // Check if Ctrl key and 'F' key are pressed simultaneously
+//   if (event.altKey && event.key === 'f') {
+//     // Call searchFunction when Ctrl + F is pressed
+//     searchFunction();
+//   }
+// });
 
 export default IndexPage;
