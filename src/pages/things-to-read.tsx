@@ -13,7 +13,15 @@ const ThingsToRead: React.FC = () => {
         {/* List of links with applied styles */}
         <li className={styles['link-list-item']}><a className={styles.link} href="https://www.google.com">Google</a></li>
         <li className={styles['link-list-item']}><a className={styles.link} href="https://www.wikipedia.org">Wikipedia</a></li>
-        {/* Add more links as needed */}
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://tryhackme.com/">TryHackMe</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.torproject.org/">Tor</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://thehiddenwiki.org/">Hidden Wiki</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://myanimelist.net/">MyAnimeList</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://ublockorigin.com/">uBlock Origin</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.tampermonkey.net/">Tampermonkey</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://anydesk.com/en">AnyDesk</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.wikipedia.org">Wikipedia</a></li>
       </ul>
 
       <button className={styles.button}>

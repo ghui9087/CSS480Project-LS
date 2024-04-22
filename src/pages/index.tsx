@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/styles.module.css';
 import { useEffect } from 'react';
+import { redirect } from 'next/navigation'
+
+import styles from '../styles/styles.module.css';
 
 const pictureLink: string = '../pic/IDE.png';
 
 function searchFunction() {
   // Your search logic here
   console.log('Searching...');
+}
+
+function ThingToRead() {
+  console.log('Harding to thing to read');
+  return <Link href="/things-to-read"></Link>;
 }
 
 const IndexPage: React.FC = () => {
@@ -27,6 +34,10 @@ const IndexPage: React.FC = () => {
         // Call searchFunction when Ctrl + F is pressed
         searchFunction();
       }
+      if (event.key === 'h') {
+        // Call searchFunction when h is pressed
+        ThingToRead();
+      }
     };
     document.addEventListener('keydown', handleKeyDown);
     // Remove event listener when component unmounts
@@ -44,7 +55,7 @@ const IndexPage: React.FC = () => {
       [shuffledInterests[i], shuffledInterests[j]] = [shuffledInterests[j], shuffledInterests[i]];
     }
     setInterests(shuffledInterests);
-    console.log('Searching...');
+    console.log('changing...');
   };
   
 
