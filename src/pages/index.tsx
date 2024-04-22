@@ -5,6 +5,7 @@ import styles from '../styles/styles.module.css';
 const pictureLink: string = '../pic/IDE.png';
 
 const IndexPage: React.FC = () => {
+  
   // State for the list of interests
   const [interests, setInterests] = useState<string[]>([
     "Programming",
@@ -22,6 +23,7 @@ const IndexPage: React.FC = () => {
       [shuffledInterests[i], shuffledInterests[j]] = [shuffledInterests[j], shuffledInterests[i]];
     }
     setInterests(shuffledInterests);
+    console.log('Searching...');
   };
 
   return (
@@ -38,7 +40,8 @@ const IndexPage: React.FC = () => {
           <li key={index}>{interest}</li>
         ))}
       </ul>
-      <button onClick={shuffleInterests} className={styles.button}>Shuffle Interests</button>
+      <button onClick={shuffleInterests} className={styles.button}>Shuffle Interests
+      </button>
       <button>
         <Link href="/things-to-read">
           Navigate to Other Page
@@ -46,6 +49,22 @@ const IndexPage: React.FC = () => {
       </button>
     </div>
   );
+  
 };
+
+const searchFunction = () => {
+  // search logic here
+  console.log('Searching...');
+};
+
+
+// Add event listener for keydown events
+document.addEventListener('keydown', (event) => {
+  // Check if Ctrl key and 'F' key are pressed simultaneously
+  if (event.altKey && event.key === 'f') {
+    // Call searchFunction when Ctrl + F is pressed
+    searchFunction();
+  }
+});
 
 export default IndexPage;
