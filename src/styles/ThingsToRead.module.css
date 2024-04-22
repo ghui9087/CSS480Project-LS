@@ -1,0 +1,53 @@
+/* ThingsToRead.module.css */
+
+/* Style for the container */
+.container {
+    text-align: center;
+    /* Center align all text */
+}
+
+/* Style for the heading */
+.heading {
+    font-size: 48px;
+    /* Make the heading twice as big */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the list of links */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for individual list items */
+.link-list-item {
+    margin-bottom: 20px;
+    /* Increase spacing between list items */
+}
+
+/* Style for links */
+.link {
+    font-size: 24px;
+    /* Make links twice as big */
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #023b78;
+}

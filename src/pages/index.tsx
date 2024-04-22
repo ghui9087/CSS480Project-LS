@@ -28,9 +28,7 @@ const IndexPage: React.FC = () => {
         searchFunction();
       }
     };
-
     document.addEventListener('keydown', handleKeyDown);
-
     // Remove event listener when component unmounts
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
@@ -66,7 +64,9 @@ const IndexPage: React.FC = () => {
       </ul>
       <button onClick={shuffleInterests} className={styles.button}>Shuffle Interests
       </button>
-      <button>
+      <br></br>
+      <br></br>
+      <button className={styles.button}>
         <Link href="/things-to-read">
           Navigate to Other Page
         </Link>
@@ -75,20 +75,5 @@ const IndexPage: React.FC = () => {
   );
   
 };
-
-// const searchFunction = () => {
-//   // search logic here
-//   console.log('Searching...');
-// };
-
-
-// // Add event listener for keydown events
-// document.addEventListener('keydown', (event) => {
-//   // Check if Ctrl key and 'F' key are pressed simultaneously
-//   if (event.altKey && event.key === 'f') {
-//     // Call searchFunction when Ctrl + F is pressed
-//     searchFunction();
-//   }
-// });
 
 export default IndexPage;

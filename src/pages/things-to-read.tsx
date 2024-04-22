@@ -1,17 +1,26 @@
 // Import necessary modules
 import React from 'react';
+import styles from '../styles/ThingsToRead.module.css'
+import Link from 'next/link';
 
 // Define the ThingsToRead component
 const ThingsToRead: React.FC = () => {
   return (
-    <div>
-      <h1>Things to Read</h1>
-      <ul>
-        {/* List of links */}
-        <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    <div className={styles.container}>
+      {/* Apply the heading style */}
+      <h1 className={styles.heading}>Things to Read</h1>
+      <ul className={styles['link-list']}>
+        {/* List of links with applied styles */}
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.google.com">Google</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.wikipedia.org">Wikipedia</a></li>
         {/* Add more links as needed */}
       </ul>
+
+      <button className={styles.button}>
+        <Link href="/">
+          Navigate to Home Page
+        </Link>
+      </button>
     </div>
   );
 };
