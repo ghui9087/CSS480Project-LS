@@ -25,7 +25,7 @@ const IndexPage: React.FC = () => {
     <div className={styles.container}>
       <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
       <p>
-        Welcome to my website! I'm [Your Name], and I'm passionate about [brief description of yourself].
+        Welcome to my website! I&apos;m [Your Name], and I&apos;m passionate about [brief description of yourself].
       </p>
       <img src="/your-image.jpg" alt="Your Image" className={styles['profile-image']} />
       <h2>Interests:</h2>
