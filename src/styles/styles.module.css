@@ -28,24 +28,24 @@
     list-style-type: none;
     padding: 0;
     color: #4800F0;
-    font-weight: 1000;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 .interests-list {
     list-style-type: none;
     padding: 0;
-    color: #4800F0;
+    color: #2B008F;
     margin-bottom: 20px;
 }
 
 .interests-list li {
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .button {
-    background-color: #4800F0;
+    background-color: #2B008F;
     color: #00FF9D;
     padding: 10px 10px;
     border: none;

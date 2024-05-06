@@ -30,7 +30,7 @@
 .link {
     font-size: 24px;
     /* Make links twice as big */
-    color: #4800F0;
+    color: #2B008F;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@
 
 
 .button {
-    background-color: #4800F0;
+    background-color: #2B008F;
     color: #fff;
     padding: 10px 10px;
     border: none;
