@@ -26,11 +26,13 @@ const ThingsToRead: React.FC = () => {
         <li className={styles['link-list-item']}><a className={styles.link} href="https://www.wikipedia.org">Wikipedia</a></li>
       </ul>
 
-      <button className={styles.button}>
-        <Link href="/">
+      <Link href="/">
+        <button className={styles.button}>
+
           Navigate to Home Page
-        </Link>
-      </button>
+
+        </button>
+      </Link>
     </div>
   );
 };

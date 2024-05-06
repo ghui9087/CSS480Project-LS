@@ -64,11 +64,11 @@ const IndexPage: React.FC = () => {
     <div className={styles.container}>
       <Navbar />
       <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
-      <p>
+      <p className={styles['intro']}>
         Welcome to my website! I&apos;m Houming Ge, and I&apos;m passionate about Computer science.
       </p>
       <img src="/IDE.jpg" alt="Your Image" className={styles['profile-image']} />
-      <h2>Interests:</h2>
+      <h2 className={styles['interests']}>Interests:</h2>
       <ul className={styles['interests-list']}>
         {/* Display the list of interests */}
         {interests.map((interest, index) => (
