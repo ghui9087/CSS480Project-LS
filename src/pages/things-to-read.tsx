@@ -23,7 +23,7 @@ const ThingsToRead: React.FC = () => {
         <li className={styles['link-list-item']}><a className={styles.link} href="https://ublockorigin.com/">uBlock Origin</a></li>
         <li className={styles['link-list-item']}><a className={styles.link} href="https://www.tampermonkey.net/">Tampermonkey</a></li>
         <li className={styles['link-list-item']}><a className={styles.link} href="https://anydesk.com/en">AnyDesk</a></li>
-        <li className={styles['link-list-item']}><a className={styles.link} href="https://www.wikipedia.org">Wikipedia</a></li>
+        <li className={styles['link-list-item']}><a className={styles.link} href="https://code.visualstudio.com/">Visual Studio Code</a></li>
       </ul>
 
       <Link href="/">
