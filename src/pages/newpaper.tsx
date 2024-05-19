@@ -34,12 +34,16 @@ const newsItems: NewsItem[] = [
 const Home: React.FC = () => {
 
     return (
-        
+
         <div className={styles.container}>
             <Navbar />
             <header className={styles.header}>
                 <h1>Cat New Times</h1>
                 <h2>Top Stories</h2>
+                <head>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
+                        crossOrigin="anonymous"></script>
+                </head>
             </header>
             <main className={styles.main}>
                 {newsItems.map((article, index) => (

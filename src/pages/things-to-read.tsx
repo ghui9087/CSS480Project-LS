@@ -8,6 +8,10 @@ import Navbar from '@/components/Navbar';
 const ThingsToRead: React.FC = () => {
   return (
     <div className={styles.container}>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
+          crossOrigin="anonymous"></script>
+      </head>
       <Navbar />
       {/* Apply the heading style */}
       <h1 className={styles.heading}>Things to Read</h1>
