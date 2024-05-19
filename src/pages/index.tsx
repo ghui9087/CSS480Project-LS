@@ -19,7 +19,7 @@ function ThingToRead() {
 }
 
 const IndexPage: React.FC = () => {
-  
+
   // State for the list of interests
   const [interests, setInterests] = useState<string[]>([
     "Programming",
@@ -58,10 +58,14 @@ const IndexPage: React.FC = () => {
     setInterests(shuffledInterests);
     console.log('changing...');
   };
-  
+
 
   return (
     <div className={styles.container}>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
+          crossorigin="anonymous"></script>
+      </head>
       <Navbar />
       <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
       <p className={styles['intro']}>
@@ -86,7 +90,7 @@ const IndexPage: React.FC = () => {
       </button>
     </div>
   );
-  
+
 };
 
 export default IndexPage;
