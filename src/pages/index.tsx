@@ -64,7 +64,7 @@ const IndexPage: React.FC = () => {
     <div className={styles.container}>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
       </head>
       <Navbar />
       <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
