@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  font-size:medium;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+.article {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.article h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #1a0dab;
+}
+
+.article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.article a {
+  display: block;
+  font-size: medium;
+  margin-top: 10px;
+  color: #1a0dab;
+}

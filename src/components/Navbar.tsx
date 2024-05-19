@@ -17,6 +17,11 @@ const Navbar: React.FC = () => {
                         Things to Read
                     </Link>
                 </li>
+                <li className={styles.navbarListItem}>
+                    <Link href="/newpaper">
+                        New Page
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
