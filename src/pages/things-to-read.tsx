@@ -3,15 +3,16 @@ import React from 'react';
 import styles from '../styles/ThingsToRead.module.css'
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Head from 'next/head';
 
 // Define the ThingsToRead component
 const ThingsToRead: React.FC = () => {
   return (
     <div className={styles.container}>
-      <head>
+      <Head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
           crossOrigin="anonymous"></script>
-      </head>
+      </Head>
       <Navbar />
       {/* Apply the heading style */}
       <h1 className={styles.heading}>Things to Read</h1>

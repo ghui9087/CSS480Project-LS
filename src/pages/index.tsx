@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { redirect } from 'next/navigation'
+import Head from 'next/head';
 
 import styles from '../styles/styles.module.css';
 import Navbar from '@/components/Navbar';
@@ -62,32 +63,34 @@ const IndexPage: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <head>
+      <Head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
           crossOrigin="anonymous"></script>
-      </head>
+      </Head>
       <Navbar />
-      <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
-      <p className={styles['intro']}>
-        Welcome to my website! I&apos;m Houming Ge, and I&apos;m passionate about Computer science.
-      </p>
-      <img src="/IDE.jpg" alt="Your Image" className={styles['profile-image']} />
-      <h2 className={styles['interests']}>Interests:</h2>
-      <ul className={styles['interests-list']}>
-        {/* Display the list of interests */}
-        {interests.map((interest, index) => (
-          <li key={index}>{interest}</li>
-        ))}
-      </ul>
-      <button onClick={shuffleInterests} className={styles.button}>Shuffle Interests
-      </button>
-      <br></br>
-      <br></br>
-      <button className={styles.button}>
-        <Link href="/things-to-read">
-          Navigate to Other Page
-        </Link>
-      </button>
+      <main>
+        <h1 className={styles['welcome-message']}>Welcome to My Website!</h1>
+        <p className={styles['intro']}>
+          Welcome to my website! I&apos;m Houming Ge, and I&apos;m passionate about Computer science.
+        </p>
+        <img src="/IDE.jpg" alt="Your Image" className={styles['profile-image']} />
+        <h2 className={styles['interests']}>Interests:</h2>
+        <ul className={styles['interests-list']}>
+          {/* Display the list of interests */}
+          {interests.map((interest, index) => (
+            <li key={index}>{interest}</li>
+          ))}
+        </ul>
+        <button onClick={shuffleInterests} className={styles.button}>Shuffle Interests
+        </button>
+        <br></br>
+        <br></br>
+        <button className={styles.button}>
+          <Link href="/things-to-read">
+            Navigate to Other Page
+          </Link>
+        </button>
+      </main>
     </div>
   );
 

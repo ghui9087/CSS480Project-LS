@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from '../styles/newpaper.module.css';
 import Navbar from '@/components/Navbar';
+import Head from 'next/head';
 
 type NewsItem = {
     title: string;
@@ -15,19 +16,19 @@ const newsItems: NewsItem[] = [
         title: "Breaking News: Market Hits Record High",
         abstract: "The stock market reached an all-time high today, driven by strong earnings reports.",
         url: "#",
-        imageUrl: "/images/market.jpg",
+        imageUrl: "/pic/market.jpg",
     },
     {
         title: "Sports Update: Local Team Wins Championship",
         abstract: "In an exciting finale, the local team clinched the championship title.",
         url: "#",
-        imageUrl: "/images/sports.jpg",
+        imageUrl: "/pic/sports.jpg",
     },
     {
         title: "Weather Alert: Heavy Rain Expected This Weekend",
         abstract: "Meteorologists are predicting heavy rainfall throughout the weekend.",
         url: "#",
-        imageUrl: "/images/weather.jpg",
+        imageUrl: "/pic/weather.jpg",
     }
 ];
 
@@ -36,14 +37,14 @@ const Home: React.FC = () => {
     return (
 
         <div className={styles.container}>
+            <Head>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
+                    crossOrigin="anonymous"></script>
+            </Head>
             <Navbar />
             <header className={styles.header}>
                 <h1>Cat New Times</h1>
                 <h2>Top Stories</h2>
-                <head>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7268938545487337"
-                        crossOrigin="anonymous"></script>
-                </head>
             </header>
             <main className={styles.main}>
                 {newsItems.map((article, index) => (
